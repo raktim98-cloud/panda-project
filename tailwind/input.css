@@ -4,3 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    * {
+      @apply box-border;
+      @apply font-sans
+    } 
+  }
+
+  @layer base {
+    h1{
+        @apply font-sans text-[3.5rem] leading-[1.2] font-medium text-[#212529] mb-[.5rem]
+  }
+  h2,h3{
+    @apply font-sans text-[1.7rem] leading-[1.2] font-extrabold text-[#212529] mb-[.5rem]
+  }
+  h5{
+    @apply font-sans text-[1.25rem] leading-[1.2] font-medium text-[#212529] mb-[.5rem]
+  }
+  p{
+    @apply font-sans font-medium text-[16px] leading-[24px] text-[#212529] py-3
+  }
+  
+}
+
+@layer components{
+   .btn{
+    @apply bg-gradient-to-b from-[#FF5898] to-[#FF136F] p-10 text-white rounded-[8px] py-[9px] px-[25px] cursor-pointer text-[16px] leading-3
+[24px] hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300 }
+}
